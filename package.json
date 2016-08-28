@@ -1,0 +1,23 @@
+{
+  "name": "vue-render-performance-comparisons",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Chris Fritz <chrisvfritz@gmail.com>",
+  "private": true,
+  "scripts": {
+    "install:react": "cd examples/react && npm install",
+    "install:vue": "cd examples/vue && npm install",
+    "install:self": "npm install",
+    "install-all": "npm-run-all --parallel install:*",
+    "build:react": "cd examples/react && npm run build",
+    "build:vue": "cd examples/vue && npm run build",
+    "build-all": "npm-run-all --parallel build:*",
+    "serve:react": "cd examples/react && npm run serve",
+    "serve:vue": "cd examples/vue && npm run serve",
+    "serve-all": "npm-run-all --parallel serve:*",
+    "start": "npm-run-all install-all build-all serve-all"
+  },
+  "devDependencies": {
+    "npm-run-all": "^3.0.0"
+  }
+}
