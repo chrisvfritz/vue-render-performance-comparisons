@@ -25,6 +25,7 @@
     "css-loader": "^0.23.1",
     "eslint": "^3.4.0",
     "eslint-config-vue": "^1.0.3",
+    "eslint-plugin-html": "^1.5.2",
     "eslint-plugin-react": "^6.2.0",
     "file-loader": "^0.8.4",
     "pushstate-server": "^1.11.0",
@@ -34,7 +35,9 @@
   },
   "eslintConfig": {
     "extends": "vue",
-    "plugins": ["react"],
+    "plugins": [
+      "react"
+    ],
     "rules": {
       "react/jsx-uses-vars": "error"
     }

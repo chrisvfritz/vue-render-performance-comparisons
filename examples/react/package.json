@@ -18,6 +18,7 @@
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.4.0",
+    "eslint-plugin-flowtype": "^2.11.4",
     "eslint-plugin-jsx-a11y": "^2.2.0",
     "eslint-plugin-react": "^6.2.0",
     "pushstate-server": "^1.11.0",
