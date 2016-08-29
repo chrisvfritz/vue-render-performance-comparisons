@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "serve": "pushstate-server . 8080"
+    "serve": "pushstate-server . 8080",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "vue": "^2.0.0-rc.1"
@@ -22,10 +23,20 @@
     "babel-preset-stage-2": "^6.13.0",
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.1",
+    "eslint": "^3.4.0",
+    "eslint-config-vue": "^1.0.3",
+    "eslint-plugin-react": "^6.2.0",
     "file-loader": "^0.8.4",
     "pushstate-server": "^1.11.0",
     "vue-loader": "^9.2.2",
     "webpack": "^2.1.0-beta.20",
     "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "eslintConfig": {
+    "extends": "vue",
+    "plugins": ["react"],
+    "rules": {
+      "react/jsx-uses-vars": "error"
+    }
   }
 }

@@ -27,7 +27,7 @@ const ListItems = {
 const List = {
   functional: true,
   render (h, { data }) {
-    return <div><ListItems { ...data }/></div>
+    return <div><ListItems {...data}/></div>
   }
 }
 

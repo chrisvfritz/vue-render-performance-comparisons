@@ -15,9 +15,20 @@
     "serve:react": "cd examples/react && npm run serve",
     "serve:vue": "cd examples/vue && npm run serve",
     "serve-all": "npm-run-all --parallel serve:*",
-    "start": "npm-run-all install-all build-all serve-all"
+    "lint:react": "cd examples/react && npm run lint",
+    "lint:vue": "cd examples/vue && npm run lint",
+    "lint:helpers": "eslint --ext .js helpers",
+    "lint-all": "npm-run-all lint:*",
+    "start": "npm-run-all install-all lint-all build-all serve-all"
   },
   "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
     "npm-run-all": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }

@@ -17,7 +17,7 @@ const ListItems = props => {
 const List = props => {
   return (
     <div>
-      <ListItems { ...props }/>
+      <ListItems {...props}/>
     </div>
   )
 }
